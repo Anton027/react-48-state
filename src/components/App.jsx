@@ -21,8 +21,10 @@ export class App extends Component {
   render() {
     return (
       <>
-        <SelectedLabel text={this.state.selectedStickerLabel} />
-        <StickerList stickers={stickers} onSelect={this.selectStickerLabel} />
+        <SelectedLabel
+          text={this.state.selectedStickerLabel} />
+        <StickerList stickers={stickers}
+          onSelect={this.selectStickerLabel} />
         <GlobalStyle />
       </>
     );

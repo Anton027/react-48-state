@@ -1,13 +1,13 @@
 import { Component } from 'react';
 
 export class Sticker extends Component {
-  // state = {
-  //   isOpen: false,
-  // };
+//   state = {
+//     isOpen: false,
+//   };
 
-  // toggleLabel = () => {
-  //   this.setState(prevState => ({ isOpen: !prevState.isOpen }));
-  // };
+//   toggleLabel = () => {
+//     this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+//   };
 
   render() {
     const {
@@ -18,17 +18,42 @@ export class Sticker extends Component {
     } = this.props;
     return (
       <div
-        style={{ border: '1px solid black', padding: 8, borderRadius: 8 }}
+            style={{
+                border: '1px solid black',
+                padding: 8, borderRadius: 8
+            }}
         onClick={() => {
-          onSelect(label);
+            onSelect(label);
           onToggle(img);
-          // this.toggleLabel();
+            // this.toggleLabel();
         }}
       >
         <img src={img} alt={label} width={120} />
         {/* {this.state.isOpen && <p>{label}</p>} */}
-        {isSelected && <p>{label}</p>}
+            {isSelected && <p>{label}</p>}
+        {/* <p>{label}</p> */}
       </div>
     );
   }
 }
+
+// export const Sticker = ({ sticker: { img, label }, onSelect }) => {
+//     return (
+//         <div
+//             style={{
+//                 border: '1px solid black',
+//                 padding: 8, borderRadius: 8
+//             }}
+//             onClick={() => {
+//                 onSelect(label);
+//             //     onToggle(img);
+//             // this.toggleLabel();
+//             }}
+//         >
+//             <img src={img} alt={label} width={120} />
+//             <p>{ label }</p>
+//             {/* {this.state.isOpen && <p>{label}</p>} */}
+//             {/* {isSelected && <p>{label}</p>} */}
+//         </div>
+//     )
+// }

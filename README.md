@@ -1,4 +1,5 @@
-**Read in other languages: [Русский](README.md), [Polska](README.pl.md).**
+terminal push { git add . git commot -m "message" git push } **Read in other
+languages: [Русский](README.md), [Polska](README.pl.md).**
 
 # React homework template
 
